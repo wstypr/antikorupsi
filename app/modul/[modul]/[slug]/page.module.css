@@ -1,0 +1,166 @@
+.article-content {
+  max-width: 48rem; /* max-w-3xl (768px) */
+  margin: 3rem auto;
+  padding: 2rem 1rem; /* Slightly reduced vertical padding for mobile */
+
+
+  /* Mobile Typography defaults (text-lg) */
+  color: #1f2937; /* text-gray-800 */
+  font-size: 1.125rem; /* text-lg for better mobile tracking */
+  line-height: 1.625; /* leading-relaxed */
+}
+
+.article-content > * {
+  margin-bottom: 1.25rem; /* Slightly reduced space-y-5 equivalent for compact mobile */
+}
+
+/* Section Subheadings: h2 */
+.article-content h2 {
+  font-size: 1.375rem; /* slightly smaller than 1.5rem for mobile */
+  font-weight: 700;
+  margin-top: 2rem; /* mt-8 */
+  margin-bottom: 0.75rem; /* mb-3 */
+  color: #1f2937;
+}
+
+/* Blockquote (Mobile Size) */
+.article-content blockquote {
+  border-left: 4px solid #374151;
+  padding-left: 1rem; /* Reduced padding on mobile */
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: #4b5563;
+  font-style: italic;
+  font-size: 1.25rem; /* text-xl reduced */
+  font-weight: 500;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.article-content blockquote footer {
+  font-size: 1rem; /* text-base */
+  margin-top: 0.5rem;
+  color: #6b7280;
+  display: block;
+}
+
+/* Lists: ul and ol */
+.article-content ul,
+.article-content ol {
+  margin-left: 1.5rem; /* Reduced indentation for mobile */
+  font-size: 1.125rem; /* text-lg */
+  padding-left: 0;
+}
+/* List Items */
+.article-content li {
+  padding-left: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Explicitly show bullet points */
+.article-content ul {
+  list-style-type: disc !important;
+}
+/* Explicitly show numbering */
+.article-content ol {
+  list-style-type: decimal !important;
+}
+
+/* Tablet and Desktop Optimizations (min-width: 640px) */
+@media (min-width: 640px) {
+  /* General font size increase (text-xl) */
+  .article-content {
+    font-size: 1.25rem;
+    padding: 3rem 1.5rem; /* Increased padding */
+  }
+
+  /* H1 size increase (text-3xl) */
+  .article-content h1 {
+    font-size: 2.25rem;
+  }
+
+  /* H2 size increase (text-2xl) */
+  .article-content h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Blockquote size increase (text-2xl) */
+  .article-content blockquote {
+    padding-left: 1.5rem; /* Restore original desktop padding */
+    font-size: 1.3rem;
+  }
+
+  /* Vertical Spacing restored for desktop */
+  .article-content > * {
+    margin-bottom: 1.5rem;
+  }
+
+  /* Lists indentation restored for desktop */
+  .article-content ul,
+  .article-content ol {
+    margin-left: 2rem;
+  }
+}
+
+/* Large Desktop Optimizations (min-width: 768px) */
+@media (min-width: 768px) {
+  .article-content h1 {
+    font-size: 2.5rem; /* md:text-4xl */
+  }
+}
+
+/* Table Wrapper (Targets the div that wraps the table) */
+.article-content > div {
+  overflow-x: auto;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+}
+
+/* Table */
+.article-content table {
+  min-width: 100%;
+  text-align: left;
+  font-size: 1rem;
+  color: #4b5563;
+  border-collapse: collapse;
+}
+
+/* Table Header */
+.article-content thead {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  background-color: #f3f4f6;
+  color: #4b5563;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.article-content thead th {
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+}
+
+/* Table Rows */
+.article-content tbody tr {
+  background-color: #fff;
+  border-bottom: 1px solid #f3f4f6;
+  transition: background-color 150ms;
+}
+
+.article-content tbody tr:nth-child(even) {
+  background-color: #f9fafb;
+}
+
+.article-content tbody tr:hover {
+  background-color: #eef2ff;
+}
+
+.article-content tbody td {
+  padding: 1rem 1.5rem;
+}
+
+/* Table Data Strong (Targets the first column semantically) */
+.article-content tbody td:first-child {
+  font-weight: 500;
+  color: #111827;
+  white-space: nowrap;
+}

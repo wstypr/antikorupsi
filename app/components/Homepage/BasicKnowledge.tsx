@@ -1,9 +1,12 @@
+import Link from "next/link";
+
 export default function BasicKnowledge() {
   const topics = [
     {
       title: "Jenis-jenis Korupsi",
       description:
         "Pelajari berbagai bentuk korupsi, mulai dari penyuapan hingga penggelapan, untuk meningkatkan kesadaran Anda.",
+      href: "#",
     },
     {
       title: "Laporan Dugaan Korupsi",
@@ -14,16 +17,19 @@ export default function BasicKnowledge() {
       title: "Gratifikasi",
       description:
         "Ketahui perbedaan antara gratifikasi, suap, dan hadiah yang sah untuk menjaga integritas dalam setiap tindakan.",
+      href: "/modul/gratifikasi/1",
     },
     {
       title: "Benturan Kepentingan",
       description:
         "Identifikasi dan kelola situasi di mana kepentingan pribadi dapat memengaruhi keputusan dan tugas profesional Anda.",
+      href: "/modul/benturan-kepentingan/1",
     },
     {
       title: "Laporan Harta Kekayaan",
       description:
         "Pentingnya pelaporan harta kekayaan oleh penyelenggara negara sebagai instrumen transparansi dan pencegahan korupsi.",
+      href: "#",
     },
   ];
 
@@ -43,22 +49,21 @@ export default function BasicKnowledge() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16">
         {topics.map((topic, index) => (
-          <div
-            key={index}
-            className="p-8 border-b-2 border-gray-200 hover:border-red-600 hover:-translate-y-2 transition-all duration-300 cursor-pointer"
-          >
-            <h3 className="text-2xl font-bold mb-3">{topic.title}</h3>
-            <p className="text-gray-600">{topic.description}</p>
-          </div>
+          <Link key={index} href={topic.href || "#"}>
+            <div className="p-8 border-b-2 border-gray-200 hover:border-red-600 hover:-translate-y-2 transition-all duration-300 cursor-pointer">
+              <h3 className="text-2xl font-bold mb-3">{topic.title}</h3>
+              <p className="text-gray-600">{topic.description}</p>
+            </div>
+          </Link>
         ))}
       </div>
 
       <div className="mt-20">
-        <h3 className="text-3xl font-extrabold mb-6">Yang banyak dicari</h3>
+        <h3 className="text-3xl font-extrabold mb-6">Pintasan Populer</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <a
             href="#"
-            className="group block p-6 border-l-4 border-red-600 hover:shadow-lg transition-all duration-300"
+            className="group block p-6 border-l-4 border-red-800 hover:shadow-lg transition-all duration-300"
           >
             <h4 className="text-xl text-zinc-900 group-hover:text-red-700 transition-colors duration-300">
               Tutorial Laporan Dugaan Korupsi
@@ -66,7 +71,7 @@ export default function BasicKnowledge() {
           </a>
           <a
             href="#"
-            className="group block p-6 border-l-4 border-red-600 hover:shadow-lg transition-all duration-300"
+            className="group block p-6 border-l-4 border-red-800 hover:shadow-lg transition-all duration-300"
           >
             <h4 className="text-xl text-zinc-900 group-hover:text-red-700 transition-colors duration-300">
               Tutorial Laporan Gratifikasi

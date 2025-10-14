@@ -1,0 +1,54 @@
+import { getModulBySlug, getModulSlugParams } from "@/app/lib/data";
+import { marked } from "marked";
+import styles from "./page.module.css";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string; modul: string }>;
+}) {
+  const { slug, modul } = await params;
+
+  const { data } = getModulBySlug({ modul, slug });
+  return {
+    title: `${data.title} | ${data.modul.replace(
+      "-",
+      " "
+    )} | antikorupsi. Kabupaten Mojokerto`,
+    description: "Pusat edukasi antikorupsi Pemerintah Kabupaten Mojokerto",
+  };
+}
+
+export function generateStaticParams() {
+  return getModulSlugParams();
+}
+
+export const dynamicParams = false;
+
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ slug: string; modul: string }>;
+}) {
+  const { slug, modul } = await params;
+
+  const { content, data } = getModulBySlug({ modul, slug });
+
+  return (
+    <>
+      <header className="mb-3 border-b border-gray-200 pb-6">
+        <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
+          {`MODUL ${data.modul} :`}
+        </p>
+        <h1 className="text-5xl font-extrabold leading-tight tracking-tighter text-gray-900 mb-4">
+          {data.title}
+        </h1>
+      </header>
+
+      <article
+        className={styles["article-content"]}
+        dangerouslySetInnerHTML={{ __html: marked(content) }}
+      ></article>
+    </>
+  );
+}

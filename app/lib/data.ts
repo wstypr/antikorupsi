@@ -1,35 +1,54 @@
+import matter from "gray-matter";
 import fs from "fs";
 import { join } from "path";
-import matter from "gray-matter";
 
-const modulDirectory = join(process.cwd(), "posts/moduls");
-const articleDirectory = join(process.cwd(), "posts/articles");
+export function getModulSlugParams() {
+  const directory = join(process.cwd(), "posts/moduls");
 
-export function getAllPostSlugs(type: "moduls" | "articles") {
-  const directory = type === "moduls" ? modulDirectory : articleDirectory;
+  const params: { modul: string; slug: string }[] = [];
 
-  const postSlugs = fs.readdirSync(directory);
-  const slugs = postSlugs.map((postSlug) => postSlug.replace(".md", ""));
-  return slugs;
-}
+  const moduls = fs.readdirSync(directory);
 
-export function getPostBySlug(type: "moduls" | "articles", slug: string) {
-  const directory = type === "moduls" ? modulDirectory : articleDirectory;
+  moduls.forEach((modul) => {
+    const files = fs.readdirSync(join(directory, modul));
 
-  const postPath = join(directory, `${slug}.md`);
-  const source = fs.readFileSync(postPath, "utf8");
-  const { content, data } = matter(source);
-  return { content, data };
-}
-
-export function getAllPostMetadata(type: "moduls" | "articles") {
-  const postSlugs = getAllPostSlugs(type);
-
-  const postMetadata = postSlugs.map((postSlug) => {
-    const { data } = getPostBySlug(type, postSlug);
-    return data;
+    files.forEach((file) => {
+      if (file.endsWith(".md")) {
+        params.push({
+          modul: modul,
+          slug: file.replace(".md", ""),
+        });
+      }
+    });
   });
 
-  return postMetadata;
+  return params;
 }
 
+export function getModulMetadata(modul: string) {
+  const directory = join(process.cwd(), "posts", "moduls", modul);
+
+  const files = fs.readdirSync(directory);
+
+  const metadata = files.map((file) => {
+    if (file.endsWith(".md")) {
+      const { data } = matter.read(join(directory, file));
+      return data;
+    }
+  });
+
+  return metadata;
+}
+
+export function getModulBySlug({
+  modul,
+  slug,
+}: {
+  modul: string;
+  slug: string;
+}) {
+  const directory = join(process.cwd(), "posts", "moduls", modul);
+  const file = fs.readFileSync(join(directory, `${slug}.md`), "utf-8");
+  const modulData = matter(file);
+  return modulData;
+}

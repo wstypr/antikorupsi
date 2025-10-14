@@ -25,14 +25,14 @@ export default function Navbar() {
       {/* Desktop Navigation */}
       <nav className="hidden lg:flex space-x-8 text-base font-medium tracking-wider text-gray-700">
         {NAVLINKS.map((link) => (
-          <a
+          <Link
             href={link.href}
             key={link.label}
             className="relative group py-2 hover:text-black transition-colors duration-300"
           >
             <span>{link.label}</span>
             <span className="absolute bottom-0 left-0 w-full h-[2px] bg-red-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out"></span>
-          </a>
+          </Link>
         ))}
       </nav>
 

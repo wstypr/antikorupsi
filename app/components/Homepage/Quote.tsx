@@ -1,66 +1,9 @@
 "use client";
 import { useState, useEffect } from "react";
 import { Playfair_Display } from "next/font/google";
+import { QUOTES } from "@/app/lib/constant";
 
 const playfair = Playfair_Display({ subsets: ["latin"], style: "italic" });
-
-// A collection of quotes related to anti-corruption and integrity.
-const quotes = [
-  {
-    quote:
-      "Hampir semua orang bisa menahan kesulitan, tetapi jika Anda ingin menguji karakter seseorang, berilah dia kekuasaan.",
-    author: "Abraham Lincoln",
-  },
-  {
-    quote:
-      "Integritas adalah melakukan hal yang benar, bahkan ketika tidak ada yang melihat.",
-    author: "C.S. Lewis",
-  },
-  {
-    quote:
-      "Kekuasaan tidak merusak; ketakutan akan kehilangan kekuasaanlah yang merusak.",
-    author: "John Steinbeck",
-  },
-  {
-    quote:
-      "Kita boleh berselisih faham, tetapi jangan sampai retak. Karena kita adalah saudara.",
-    author: "Abdurrahman Wahid (Gus Dur)",
-  },
-  {
-    quote:
-      "Jadilah pemimpin yang mengabdi, bukan pemimpin yang ingin dilayani.",
-    author: "Soekarno",
-  },
-  {
-    quote: "Kejujuran adalah mata uang yang berlaku di mana-mana.",
-    author: "B.J. Habibie",
-  },
-  {
-    quote:
-      "Korupsi itu penyakit yang lebih parah dari kanker, karena korupsi menyentuh segala aspek kehidupan.",
-    author: "Mohammad Hatta",
-  },
-  {
-    quote:
-      "Kemerdekaan hanyalah jembatan, walau pun jembatan emas, di seberang jembatan itu barulah kita menyempurnakan kewajiban kita.",
-    author: "Soekarno",
-  },
-  {
-    quote:
-      "Pendidikan adalah senjata paling mematikan di dunia, karena dengan pendidikan Anda dapat mengubah dunia.",
-    author: "Nelson Mandela",
-  },
-  {
-    quote:
-      "Perubahan tidak dapat dimulai dari atas; semuanya berawal dari bawah.",
-    author: "Tan Malaka",
-  },
-  {
-    quote:
-      "Seorang pemimpin sejati adalah orang yang bersedia berkorban untuk kepentingan orang banyak.",
-    author: "B.J. Habibie",
-  },
-];
 
 export default function Quote() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -68,14 +11,14 @@ export default function Quote() {
   // Effect to cycle through quotes periodically.
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % quotes.length);
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % QUOTES.length);
     }, 7000); // Change quote every 7 seconds.
 
     // Cleanup interval on component unmount to prevent memory leaks.
     return () => clearInterval(intervalId);
   }, []);
 
-  const currentQuote = quotes[currentIndex];
+  const currentQuote = QUOTES[currentIndex];
 
   return (
     <section className="bg-gray-100">

@@ -8,18 +8,16 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-start gap-12">
           <div className="max-w-md">
             <h4 className="text-[2rem] font-extrabold">
-              antikorupsi<span className="text-red-600">.</span>
+              antikorupsi<span className="text-red-800">.</span>
             </h4>
             <div className="mt-2 text-gray-700">
               <p className="text-lg">
-                Pusat edukasi antikorupsi
+                Pusat Edukasi Antikorupsi
                 <br />
                 Pemerintah Kabupaten Mojokerto
               </p>
-              <p className="text-base text-gray-600 mt-2">
-                dikelola oleh Inspektorat
-                <br />
-                Jl. R. A. Basoeni 19C Sooko Kabupaten Mojokerto
+              <p className="text-sm text-gray-600 mt-2">
+                Dikelola oleh Inspektorat
               </p>
             </div>
           </div>
@@ -41,7 +39,7 @@ export default function Footer() {
             </div>
             <div>
               <h5 className="text-sm font-bold tracking-widest uppercase mb-4 text-black">
-                Terhubung
+                Media Lainnya
               </h5>
               <ul className="space-y-3 text-base text-gray-700">
                 {SOCIALLINKS.map((link) => (
