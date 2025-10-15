@@ -6,7 +6,9 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Logo() {
   return (
     <Link href="/">
-      <div className={`text-[2rem] font-extrabold ${inter.className}`}>
+      <div
+        className={`text-[2rem] font-extrabold ${inter.className} tracking-[-0.1em]`}
+      >
         ak<span className="text-red-800">.</span>
       </div>
     </Link>

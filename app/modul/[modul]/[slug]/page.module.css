@@ -3,7 +3,6 @@
   margin: 3rem auto;
   padding: 2rem 1rem; /* Slightly reduced vertical padding for mobile */
 
-
   /* Mobile Typography defaults (text-lg) */
   color: #1f2937; /* text-gray-800 */
   font-size: 1.125rem; /* text-lg for better mobile tracking */
@@ -12,6 +11,16 @@
 
 .article-content > * {
   margin-bottom: 1.25rem; /* Slightly reduced space-y-5 equivalent for compact mobile */
+}
+
+.article-content hr {
+  display: block;
+  width: 65%;
+  margin: 3rem auto;
+  text-align: center;
+  height: 1px;
+  background-color: #d6d6d6;
+  opacity: 0.2;
 }
 
 /* Section Subheadings: h2 */
@@ -206,4 +215,3 @@
   color: #111827;
   white-space: nowrap;
 }
-
