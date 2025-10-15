@@ -38,10 +38,8 @@ export default async function Page({
 
   return (
     <>
-      <header className="mb-3 border-b border-gray-200 pb-6">
-        <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
-          {`MODUL ${modul} :`}
-        </p>
+      <header className="mb-3  border-b border-gray-200 pb-6">
+        {`MODUL ${modul.replace("-", " ").toUpperCase()} :`}
         <h1 className="text-5xl font-extrabold leading-tight tracking-tighter text-gray-900 mb-4">
           {data.title}
         </h1>
