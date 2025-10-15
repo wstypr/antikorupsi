@@ -6,7 +6,7 @@ export default function BasicKnowledge() {
       title: "Jenis-jenis Korupsi",
       description:
         "Pelajari berbagai bentuk korupsi, mulai dari penyuapan hingga penggelapan, untuk meningkatkan kesadaran Anda.",
-      href: "#",
+      href: "/modul/jenis-korupsi/1",
     },
     {
       title: "Laporan Dugaan Korupsi",
