@@ -1,5 +1,5 @@
 .article-content {
-  max-width: 48rem; /* max-w-3xl (768px) */
+  max-width: 56rem; /* max-w-4xl (896px) */
   margin: 3rem auto;
   padding: 2rem 1rem; /* Slightly reduced vertical padding for mobile */
 
@@ -20,6 +20,33 @@
   font-weight: 700;
   margin-top: 2rem; /* mt-8 */
   margin-bottom: 0.75rem; /* mb-3 */
+  color: #1f2937;
+}
+
+/* Section Subheadings: h3 */
+.article-content h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: #1f2937;
+}
+
+/* Section Subheadings: h4 */
+.article-content h4 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-top: 1.25rem;
+  margin-bottom: 0.625rem;
+  color: #1f2937;
+}
+
+/* Section Subheadings: h5 */
+.article-content h5 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
   color: #1f2937;
 }
 
@@ -48,7 +75,7 @@
 .article-content ul,
 .article-content ol {
   margin-left: 1.5rem; /* Reduced indentation for mobile */
-  font-size: 1.125rem; /* text-lg */
+  /* font-size: 1.125rem; */
   padding-left: 0;
 }
 /* List Items */
@@ -82,6 +109,21 @@
   /* H2 size increase (text-2xl) */
   .article-content h2 {
     font-size: 1.5rem;
+  }
+
+  /* H3 size increase (text-xl) */
+  .article-content h3 {
+    font-size: 1.25rem;
+  }
+
+  /* H4 size increase (text-lg) */
+  .article-content h4 {
+    font-size: 1.125rem;
+  }
+
+  /* H5 size increase (text-base) */
+  .article-content h5 {
+    font-size: 1rem;
   }
 
   /* Blockquote size increase (text-2xl) */
@@ -164,3 +206,4 @@
   color: #111827;
   white-space: nowrap;
 }
+

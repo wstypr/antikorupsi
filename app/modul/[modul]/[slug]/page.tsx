@@ -11,11 +11,13 @@ export async function generateMetadata({
 
   const { data } = getModulBySlug({ modul, slug });
   return {
-    title: `${data.title} | ${data.modul.replace(
+    title: `${data.title} | ${modul.replace(
       "-",
       " "
     )} | antikorupsi. Kabupaten Mojokerto`,
-    description: "Pusat edukasi antikorupsi Pemerintah Kabupaten Mojokerto",
+    description: data.excerpt,
+    keywords: [modul],
+    author: "Pusat Edukasi Antikorupsi Pemerintah Kabupaten Mojokerto",
   };
 }
 
@@ -38,7 +40,7 @@ export default async function Page({
     <>
       <header className="mb-3 border-b border-gray-200 pb-6">
         <p className="text-xs uppercase tracking-widest text-gray-500 mb-2">
-          {`MODUL ${data.modul} :`}
+          {`MODUL ${modul} :`}
         </p>
         <h1 className="text-5xl font-extrabold leading-tight tracking-tighter text-gray-900 mb-4">
           {data.title}

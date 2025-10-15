@@ -50,7 +50,7 @@ export default function BasicKnowledge() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16">
         {topics.map((topic, index) => (
           <Link key={index} href={topic.href || "#"}>
-            <div className="p-8 border-b-2 border-gray-200 hover:border-red-600 hover:-translate-y-2 transition-all duration-300 cursor-pointer">
+            <div className="h-full p-8 border-b-2 border-gray-200 hover:border-red-600 hover:-translate-y-2 transition-all duration-300 cursor-pointer">
               <h3 className="text-2xl font-bold mb-3">{topic.title}</h3>
               <p className="text-gray-600">{topic.description}</p>
             </div>

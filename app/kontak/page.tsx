@@ -42,7 +42,7 @@ export default function Page() {
           {/* Main Content Area: Contact Info and Map - Constrained and centered to match introduction */}
           <div className="max-w-5xl mx-auto space-y-12">
             {/* Contact Details Card */}
-            <div className="bg-white p-6 md:p-10 rounded-xl">
+            <div className="p-6 md:p-10 rounded-xl">
               <h2 className="text-3xl font-bold mb-8 text-gray-900">
                 Informasi Kontak & Kantor
               </h2>
@@ -88,13 +88,13 @@ export default function Page() {
                         </span>
                         <a
                           href="mailto:inspektoratmojokertokab@gmail.com"
-                          className="text-gray-900 font-semibold hover:text-red-600 transition-colors block"
+                          className="text-gray-900 text-sm md:text-base font-semibold hover:text-red-600 transition-colors block"
                         >
                           inspektoratmojokertokab@gmail.com
                         </a>
                         <a
                           href="mailto:inspektorat.kab.mojokerto@gmail.com"
-                          className="text-gray-900 font-semibold hover:text-red-600 transition-colors block"
+                          className="text-gray-900 text-sm md:text-base font-semibold hover:text-red-600 transition-colors block"
                         >
                           inspektorat.kab.mojokerto@gmail.com
                         </a>

@@ -18,7 +18,7 @@ export default async function Layout({
     <div className="container mx-auto flex flex-col md:flex-row gap-12 px-6 lg:px-12 py-10">
       {/* Main Content (appears second on desktop) */}
       <div className="flex-1 min-w-0 md:order-2">
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           {children}
 
           <section className="mt-16 pt-10 border-t border-gray-200">
