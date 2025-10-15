@@ -115,17 +115,17 @@
 
   /* H2 size increase (text-2xl) */
   .article-content h2 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
 
   /* H3 size increase (text-xl) */
   .article-content h3 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 
   /* H4 size increase (text-lg) */
   .article-content h4 {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
   }
 
   /* H5 size increase (text-base) */
