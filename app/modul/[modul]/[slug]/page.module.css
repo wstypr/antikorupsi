@@ -1,10 +1,10 @@
 .article-content {
   max-width: 56rem; /* max-w-4xl (896px) */
-  padding: 2rem 1rem; /* Slightly reduced vertical padding for mobile */
+  padding: 1rem 1.2rem; /* Slightly reduced vertical padding for mobile */
   /* Mobile Typography defaults (text-lg) */
   color: #1f2937;
   font-size: 1.125rem; /* text-lg for better mobile tracking */
-  line-height: 1.625; /* leading-relaxed */
+  line-height: 1.825; /* leading-relaxed */
 }
 
 .article-content > * {
@@ -28,6 +28,7 @@
   margin-top: 2rem; /* mt-8 */
   margin-bottom: 0.75rem; /* mb-3 */
   color: #1f2937;
+  line-height: 1.4;
 }
 
 .article-content a {
@@ -41,6 +42,7 @@
   margin-top: 1.5rem;
   margin-bottom: 0.75rem;
   color: #1f2937;
+  line-height: 1.3;
 }
 
 /* Section Subheadings: h4 */
@@ -50,6 +52,7 @@
   margin-top: 1.25rem;
   margin-bottom: 0.625rem;
   color: #1f2937;
+  line-height: 1.3;
 }
 
 /* Section Subheadings: h5 */
@@ -108,7 +111,8 @@
 @media (min-width: 640px) {
   /* General font size increase (text-xl) */
   .article-content {
-    font-size: 1.25rem;
+    font-size: 1.15rem;
+    line-height: 2;
     padding: 3rem 1.5rem; /* Increased padding */
   }
 

@@ -30,22 +30,22 @@ export default function BasicKnowledge() {
       <div className="mt-20">
         <h3 className="text-3xl font-extrabold mb-6">Pintasan Populer</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <a
-            href="#"
+          <Link
+            href="/modul/laporan-dugaan-korupsi/4"
             className="group block p-6 border-l-4 border-red-800 hover:shadow-lg transition-all duration-300"
           >
             <h4 className="text-xl text-zinc-900 group-hover:text-red-700 transition-colors duration-300">
               Tutorial Laporan Dugaan Korupsi
             </h4>
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            href="/modul/laporan-gratifikasi/9"
             className="group block p-6 border-l-4 border-red-800 hover:shadow-lg transition-all duration-300"
           >
             <h4 className="text-xl text-zinc-900 group-hover:text-red-700 transition-colors duration-300">
               Tutorial Laporan Gratifikasi
             </h4>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

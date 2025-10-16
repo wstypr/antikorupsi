@@ -101,7 +101,7 @@ export default async function Layout({
                   href={`/modul/${modul}/${index + 1}`}
                   className={`block py-1 text-lg transition-colors duration-200 ${
                     index + 1 === Number(slug)
-                      ? "text-red-600 font-bold"
+                      ? "text-red-600 font-semibold"
                       : "text-gray-600 hover:text-gray-900"
                   }`}
                 >
