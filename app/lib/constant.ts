@@ -27,7 +27,7 @@ export const TOPICS = [
     title: "Laporan Dugaan Korupsi",
     description:
       "Pahami prosedur dan saluran resmi untuk melaporkan dugaan tindak pidana korupsi secara aman dan bertanggung jawab.",
-    href: "/laporan-dugaan-korupsi/1",
+    href: "/modul/laporan-dugaan-korupsi/1",
   },
   {
     title: "Gratifikasi",
