@@ -30,6 +30,10 @@
   color: #1f2937;
 }
 
+.article-content a {
+  color: rgb(141, 0, 0);
+}
+
 /* Section Subheadings: h3 */
 .article-content h3 {
   font-size: 1.25rem;

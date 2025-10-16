@@ -1,38 +1,7 @@
 import Link from "next/link";
+import { TOPICS } from "@/app/lib/constant";
 
 export default function BasicKnowledge() {
-  const topics = [
-    {
-      title: "Jenis-jenis Korupsi",
-      description:
-        "Pelajari berbagai bentuk korupsi, mulai dari penyuapan hingga penggelapan, untuk meningkatkan kesadaran Anda.",
-      href: "/modul/jenis-korupsi/1",
-    },
-    {
-      title: "Laporan Dugaan Korupsi",
-      description:
-        "Pahami prosedur dan saluran resmi untuk melaporkan dugaan tindak pidana korupsi secara aman dan bertanggung jawab.",
-    },
-    {
-      title: "Gratifikasi",
-      description:
-        "Ketahui perbedaan antara gratifikasi, suap, dan hadiah yang sah untuk menjaga integritas dalam setiap tindakan.",
-      href: "/modul/gratifikasi/1",
-    },
-    {
-      title: "Benturan Kepentingan",
-      description:
-        "Identifikasi dan kelola situasi di mana kepentingan pribadi dapat memengaruhi keputusan dan tugas profesional Anda.",
-      href: "/modul/benturan-kepentingan/1",
-    },
-    {
-      title: "Laporan Harta Kekayaan",
-      description:
-        "Pentingnya pelaporan harta kekayaan oleh penyelenggara negara sebagai instrumen transparansi dan pencegahan korupsi.",
-      href: "#",
-    },
-  ];
-
   return (
     <section
       className="container mx-auto px-6 lg:px-12 pt-8 pb-24"
@@ -48,7 +17,7 @@ export default function BasicKnowledge() {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16">
-        {topics.map((topic, index) => (
+        {TOPICS.map((topic, index) => (
           <Link key={index} href={topic.href || "#"}>
             <div className="h-full p-8 border-b-2 border-gray-200 hover:border-red-600 hover:-translate-y-2 transition-all duration-300 cursor-pointer">
               <h3 className="text-2xl font-bold mb-3">{topic.title}</h3>

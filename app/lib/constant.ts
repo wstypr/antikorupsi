@@ -16,6 +16,38 @@ export const SOCIALLINKS = [
   },
 ];
 
+export const TOPICS = [
+  {
+    title: "Jenis-jenis Korupsi",
+    description:
+      "Pelajari berbagai bentuk korupsi, mulai dari penyuapan hingga penggelapan, untuk meningkatkan kesadaran Anda.",
+    href: "/modul/jenis-korupsi/1",
+  },
+  {
+    title: "Laporan Dugaan Korupsi",
+    description:
+      "Pahami prosedur dan saluran resmi untuk melaporkan dugaan tindak pidana korupsi secara aman dan bertanggung jawab.",
+  },
+  {
+    title: "Gratifikasi",
+    description:
+      "Ketahui perbedaan antara gratifikasi, suap, dan hadiah yang sah untuk menjaga integritas dalam setiap tindakan.",
+    href: "/modul/gratifikasi/1",
+  },
+  {
+    title: "Benturan Kepentingan",
+    description:
+      "Identifikasi dan kelola situasi di mana kepentingan pribadi dapat memengaruhi keputusan dan tugas profesional Anda.",
+    href: "/modul/benturan-kepentingan/1",
+  },
+  {
+    title: "Laporan Harta Kekayaan",
+    description:
+      "Pentingnya pelaporan harta kekayaan oleh penyelenggara negara sebagai instrumen transparansi dan pencegahan korupsi.",
+    href: "/modul/laporan-harta-kekayaan/1",
+  },
+];
+
 export const QUOTES = [
   {
     quote:
