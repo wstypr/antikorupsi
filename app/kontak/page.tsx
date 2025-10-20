@@ -18,10 +18,10 @@ export default function Page() {
               Hubungi Kami<span className="text-red-600">.</span>
             </h1>
             {/* Reduced max width of separator to align visually with the intro text */}
-            <div className="w-24 h-1 bg-red-600 rounded-full mb-8"></div>
+            <div className="w-24 h-1 bg-red-600 rounded-full mb-16"></div>
 
             {/* Introduction paragraphs */}
-            <div className="space-y-6">
+            <div className="space-y-6 p-8">
               <p className="text-xl text-gray-700 leading-relaxed">
                 Kami sangat antusias untuk membangun ekosistem antikorupsi yang
                 kuat bersama Anda. Baik Anda memiliki pertanyaan teknis,
@@ -126,26 +126,8 @@ export default function Page() {
                   </ul>
                 </div>
 
-                {/* Kantor Kami (Office Address) */}
                 <div>
-                  {/* <h3 className="text-xl font-semibold mb-5 text-gray-800 flex items-center">
-                    <svg
-                      className="w-6 h-6 mr-3 text-slate-600"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
-                      <circle cx="12" cy="10" r="3" />
-                    </svg>
-                    Alamat Kantor
-                  </h3> */}
+               
                   <div className="text-gray-700 text-lg space-y-3">
                     <p>
                       <strong className="text-gray-900 text-xl font-bold block">

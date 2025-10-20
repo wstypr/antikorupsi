@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-start gap-12">
           <div className="max-w-md">
             <h4 className="text-[2rem] font-extrabold">
-              antikorupsi<span className="text-red-800">.</span>
+              antikorupsi<span className="text-red-600">.</span>
             </h4>
             <div className="mt-2 text-gray-700">
               <p className="text-lg">

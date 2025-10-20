@@ -9,7 +9,7 @@ export default function Logo() {
       <div
         className={`text-[2rem] font-extrabold ${inter.className} tracking-[-0.1em]`}
       >
-        ak<span className="text-red-800">.</span>
+        ak<span className="text-red-600">.</span>
       </div>
     </Link>
   );
