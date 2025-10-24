@@ -32,7 +32,7 @@ export const TOPICS = [
   {
     title: "Gratifikasi",
     description:
-      "Ketahui perbedaan antara gratifikasi, suap, dan hadiah yang sah untuk menjaga integritas dalam setiap tindakan.",
+      "Pahami beda antara pemberian biasa dan gratifikasi yang dilarang untuk menjaga integritas dalam setiap tindakan.",
     href: "/modul/gratifikasi/1",
   },
   {
@@ -40,6 +40,12 @@ export const TOPICS = [
     description:
       "Identifikasi dan kelola situasi di mana kepentingan pribadi dapat memengaruhi keputusan dan tugas profesional Anda.",
     href: "/modul/benturan-kepentingan/1",
+  },
+  {
+    title: "Sistem Merit",
+    description:
+      "Pelajari bagaimana sistem merit dalam manajemen ASN dapat berperan penting dalam mewujudkan birokrasi antikorupsi di Pemerintah Daerah.",
+    href: "/modul/sistem-merit/1",
   },
   {
     title: "Laporan Harta Kekayaan",
@@ -65,11 +71,7 @@ export const QUOTES = [
       "Kekuasaan tidak merusak; ketakutan akan kehilangan kekuasaanlah yang merusak.",
     author: "John Steinbeck",
   },
-  {
-    quote:
-      "Kita boleh berselisih faham, tetapi jangan sampai retak. Karena kita adalah saudara.",
-    author: "Abdurrahman Wahid (Gus Dur)",
-  },
+
   {
     quote:
       "Jadilah pemimpin yang mengabdi, bukan pemimpin yang ingin dilayani.",
@@ -83,16 +85,6 @@ export const QUOTES = [
     quote:
       "Korupsi itu penyakit yang lebih parah dari kanker, karena korupsi menyentuh segala aspek kehidupan.",
     author: "Mohammad Hatta",
-  },
-  {
-    quote:
-      "Kemerdekaan hanyalah jembatan, walau pun jembatan emas, di seberang jembatan itu barulah kita menyempurnakan kewajiban kita.",
-    author: "Soekarno",
-  },
-  {
-    quote:
-      "Pendidikan adalah senjata paling mematikan di dunia, karena dengan pendidikan Anda dapat mengubah dunia.",
-    author: "Nelson Mandela",
   },
   {
     quote:
