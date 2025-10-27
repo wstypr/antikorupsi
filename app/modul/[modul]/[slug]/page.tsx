@@ -28,9 +28,9 @@ export async function generateMetadata({
       description: data.excerpt,
       images: [
         {
-          url: "https://antikorupsi-mojokertokab.netlify.app/og-image.jpg",
+          url: "https://antikorupsi-mojokertokab.netlify.app/og-image.png",
           width: 1200,
-          height: 603,
+          height: 630,
           alt: `${data.title} | ${modul.replace(
             "-",
             " "
