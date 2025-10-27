@@ -18,6 +18,26 @@ export async function generateMetadata({
     description: data.excerpt,
     keywords: [modul],
     author: "Pusat Edukasi Antikorupsi Pemerintah Kabupaten Mojokerto",
+    openGraph: {
+      type: "website",
+      url: `https://antikorupsi-mojokertokab.netlify.app/modul/${modul}/${slug}`,
+      title: `${data.title} | ${modul.replace(
+        "-",
+        " "
+      )} | antikorupsi. Kabupaten Mojokerto`,
+      description: data.excerpt,
+      images: [
+        {
+          url: "https://antikorupsi-mojokertokab.netlify.app/og-image.jpg",
+          width: 1200,
+          height: 603,
+          alt: `${data.title} | ${modul.replace(
+            "-",
+            " "
+          )} | antikorupsi. Kabupaten Mojokerto`,
+        },
+      ],
+    },
   };
 }
 
