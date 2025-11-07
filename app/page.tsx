@@ -1,6 +1,7 @@
 import Hero from "@/app/components/Homepage/Hero";
 import BasicKnowledge from "@/app/components/Homepage/BasicKnowledge";
-import Quote from "./components/Homepage/Quote";
+import Quote from "@/app/components/Homepage/Quote";
+import Articles from "@/app/components/Homepage/Articles";
 
 export const metadata = {
   title: "antikorupsi | Kabupaten Mojokerto",
@@ -28,6 +29,7 @@ export default function Home() {
       <hr className="container mx-auto border-neutral-200 my-16" />
       <BasicKnowledge />
       <Quote />
+      <Articles />
     </>
   );
 }
